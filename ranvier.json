@@ -1,6 +1,6 @@
 {
-  "port": 23,
-  "webPort": 9001,
+  "port": 4000,
+  "webPort": 8080,
   "webWhitelist": [
     "localhost",
     "127.0.0.1",
