@@ -1,0 +1,35 @@
+{
+  "port": 23,
+  "webPort": 9001,
+  "webWhitelist": [
+    "localhost",
+    "127.0.0.1",
+    "::1"
+  ],
+  "bundles": [
+    "ranvier-areas",
+    "ranvier-channels",
+    "ranvier-commands",
+    "ranvier-effects",
+    "ranvier-groups",
+    "ranvier-input-events",
+    "ranvier-player-events",
+    "ranvier-skills",
+    "ranvier-combat",
+    "ranvier-classes",
+    "ranvier-crafting",
+    "ranvier-quests",
+    "ranvier-vendors",
+    "debug-commands"
+  ],
+  "maxAccountNameLength": 20,
+  "minAccountNameLength": 3,
+  "maxPlayerNameLength": 20,
+  "minPlayerNameLength": 3,
+  "maxCharacters": 3,
+  "allowMultiplay": false,
+  "startingRoom": "limbo:1",
+  "moveCommand": "move",
+  "skillLag": 2000,
+  "defaultMaxPlayerInventory": 16
+}
