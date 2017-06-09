@@ -2,6 +2,8 @@
 
 # ranvier
 
+# oc new-app bucharestgold/centos7-s2i-nodejs:current~https://github.com/CodeOtter/tech-career.git
+
 ## Node.js-based MUD engine
 
 See the [staging](https://github.com/shawncplus/ranviermud/tree/staging) branch for the latest features.
