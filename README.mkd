@@ -2,7 +2,10 @@
 
 # ranvier
 
-`oc new-app bucharestgold/centos7-s2i-nodejs:current~https://github.com/CodeOtter/tech-career.git`
+```
+oc login https://api.starter-us-west-2.openshift.com
+oc new-app bucharestgold/centos7-s2i-nodejs:7~https://github.com/CodeOtter/tech-career.git
+```
 
 ## Node.js-based MUD engine
 
