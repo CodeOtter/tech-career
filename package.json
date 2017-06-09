@@ -7,10 +7,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "gulp && ./ranvier -v --save=10 --respawn=10",
-    "test": "gulp && npm run-script test:coverage",
-    "test:coverage": "istanbul --include-all-sources cover _mocha -- -R dot --recursive ./test/**/*.spec.js",
-    "telnet": "./node_modules/.bin/webtelnet 8080 4000 -c utf8"
+    "start": "./node_modules/.bin/gulp && ./ranvier -v --save=10 --respawn=10",
+    "test": "./node_modules/.bin/gulp && npm run-script test:coverage",
+    "test:coverage": "./node_modules/.bin/istanbul --include-all-sources cover _mocha -- -R dot --recursive ./test/**/*.spec.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.0",

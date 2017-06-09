@@ -2,7 +2,7 @@
 
 # ranvier
 
-# oc new-app bucharestgold/centos7-s2i-nodejs:current~https://github.com/CodeOtter/tech-career.git
+`oc new-app bucharestgold/centos7-s2i-nodejs:current~https://github.com/CodeOtter/tech-career.git`
 
 ## Node.js-based MUD engine
 
