@@ -1,6 +1,6 @@
 {
   "name": "ranviermud",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/shawncplus/ranviermud.git"
@@ -11,6 +11,7 @@
     "test": "./node_modules/.bin/gulp && npm run-script test:coverage",
     "test:coverage": "./node_modules/.bin/istanbul --include-all-sources cover _mocha -- -R dot --recursive ./test/**/*.spec.js"
   },
+  "main": "raniver",
   "dependencies": {
     "bcryptjs": "^2.4.0",
     "celebrate": "^4.0.1",
