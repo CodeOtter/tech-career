@@ -148,7 +148,7 @@ function init(restartServer) {
       GameState.InputEventManager.attach(socket);
 
       socket.write("Connecting...\n");
-      Logger.log("User connected...");
+      Logger.log("User " + socket.remoteAddress + ":" + socket.remotePort + "connected...");
 
       // @see: bundles/ranvier-events/events/login.js
       socket.emit('intro', socket);
