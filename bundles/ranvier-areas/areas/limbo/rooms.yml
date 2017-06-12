@@ -154,6 +154,7 @@
 - id: 13
   title: "South Living Room"
   description: "This is still the room in which we do our living"
+  npcs: ["limbo:7"]
   exits:
     - roomId: "limbo:12"
       direction: north
