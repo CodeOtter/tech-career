@@ -162,7 +162,6 @@
       direction: east
   items:
     - id: "limbo:11"
-    - id: "limbo:12"
 - id: 14
   title: "Kitchen"
   description: "This is the room with food"

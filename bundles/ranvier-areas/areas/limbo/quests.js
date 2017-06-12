@@ -33,7 +33,7 @@ module.exports = (srcPath) => {
           say(player, `<b><cyan>Hint: To move around the game type any of the exit names listed in <white>[Exits: ...]</white> when you use the '<white>look</white>' command.</cyan>`, 80);
         }
       },
-      goals: [
+      goals: [ 
         {
           type: FetchGoal,
           config: { title: 'Find A Ticket', count: 1, item: "limbo:1" }
@@ -52,7 +52,7 @@ module.exports = (srcPath) => {
         }
       ]
     },
-
+    
     2: {
       config: {
         title: "One Cheese Please",
@@ -102,6 +102,31 @@ Once you find some bring it back to the rat, use '<white>quest log</white>' to f
           config: { title: "Kill an Intern", npc: "limbo:4", count: 1 }
         }
       ]
-    }
+    },
+    
+    4: {
+      config: {
+        title: "Give Jaydon laptop",
+        level: 1,
+        desc: `Jaydon cannot find his laptop he was blinded by sea salt help him out`,
+        repeatable: true,
+        reward: (quest, player) => {
+          player.emit('experience', LevelUtil.mobExp(quest.config.level) * 3);
+          say(player);
+          say(player, `Congrats you dont suck`, 80);
+        }
+      },
+      goals: [
+        {
+          type: FetchGoal,
+          config: {
+            title: 'Found Laptop',
+            count: 1,
+            item: "limbo:11",
+            removeItem: true,
+          }
+        }
+      ]
+    },
   };
 };

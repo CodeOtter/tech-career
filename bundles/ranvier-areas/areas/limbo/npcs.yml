@@ -107,4 +107,5 @@
           min: 10
           max: 20
       description: >-
-    Awful. A disgrace. Worse than rats. Kill immediately.
+        Awful. A disgrace. Worse than rats. Kill immediately.
+      quests: [limbo:4]  
