@@ -157,3 +157,8 @@
     sellable:
       value: 30
       currency: gold
+- id: 11
+  name: "Laptop"
+  roomDesc: "Jaydons laptop"
+  keywords: ["Lappytop", "jays laptop", "lap top"]
+  description: "A computer for your lap"
