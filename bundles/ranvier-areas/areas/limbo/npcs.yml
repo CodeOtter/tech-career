@@ -93,3 +93,18 @@
           currency: gold
       enterMessage: "Step right up! Get your wares at Moe's Shop!"
       leaveMessage: "Come back soon!"
+- id: 7
+  keywords: ["Jaydon", "Jay"]
+  level: 2
+  name: "Jaydon"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+    Awful. A disgrace. Worse than rats. Kill immediately.
