@@ -15,6 +15,8 @@
       direction: down
     - roomId: "limbo:9"
       direction: west
+    - roomId: "limbo:11"
+      direction: up
 - id: 2
   title: "The Rabbit Hole"
   description: >-
@@ -128,3 +130,112 @@
   exits:
     - roomId: "limbo:8"
       direction: up
+- id: 11
+  title: "House entrance"
+  description: "This is the entrance of the apartment we are living at"
+  exits:
+    - roomId: "limbo:1"
+      direction: down
+    - roomId: "limbo:12"
+      direction: south
+- id: 12
+  title: "North Living Room"
+  description: "This is the room in which we do our living"
+  exits:
+    - roomId: "limbo:14"
+      direction: east
+    - roomId: "limbo:13"
+      direction: south
+    - roomId: "limbo:17"
+      direction: west
+    - roomId: "limbo:11"
+      direction: north
+
+- id: 13
+  title: "South Living Room"
+  description: "This is still the room in which we do our living"
+  exits:
+    - roomId: "limbo:12"
+      direction: north
+    - roomId: "limbo:15"
+      direction: east
+  items:
+    - id: "limbo:11"
+- id: 14
+  title: "Kitchen"
+  description: "This is the room with food"
+  exits:
+    - roomId: "limbo:12"
+      direction: west
+    - roomId: "limbo:15"
+      direction: south
+- id: 15 
+  title: "Dining Room"
+  description: "The rooom where we eat the food"
+  exits:
+    - roomId: "limbo:14"
+      direction: north
+    - roomId: "limbo:16"
+      direction: south
+    - roomId: "limbo:13"
+      direction: west
+- id: 16
+  title: "The deck"
+  description: "A balcony off of the dining room for nature"
+  exits:
+    - roomId: "limbo:15"
+      direction: north
+- id: 17
+  title: "North hall"
+  description: "Dull and stupid connects rooms"
+  exits:
+    - roomId: "limbo:12"
+      direction: east
+    - roomId: "limbo:20"
+      direction: west
+    - roomId: "limbo:18"
+      direction: south
+- id: 18
+  title: "South hall"
+  description: "Dull and stupid and connects rooms"
+  exits: 
+  - roomId: "limbo:17"
+    direction: north
+  - roomId: "limbo:22"
+    direction: south
+  - roomId: "limbo:23"
+    direction: east
+  - roomId: "limbo:21"
+    direction: west
+- id: 19
+  title: "Master bathroom"
+  description: "Where the masters bath"
+  exits:
+    - roomId: "limbo:20"
+      direction: north
+- id: 20
+  title: "Master Bedroom"
+  description: "The room where the masters sleep"
+  exits:
+    - roomId: "limbo:17"
+      direction: east
+    - roomId: "limbo:19"
+      direction: north
+- id: 21
+  title: "Office"
+  description: "The room where shit gets done"
+  exits:
+    - roomId: "limbo:18"
+      direction: east
+- id: 22
+  title: "Morgaine's Room"
+  description: "The room where Morgaine does her living and sleeping"
+  exits: 
+    - roomId: "limbo:18"
+      direction: north
+- id: 23
+  title: "Morgaine's Bathroom"
+  description: "The room where Morgaine takes care of her hygeine"
+  exits: 
+    - roomId: "limbo:18"
+      direction: north
