@@ -108,4 +108,118 @@
           max: 20
       description: >-
         Awful. A disgrace. Worse than rats. Kill immediately.
-      quests: [limbo:4]  
+  quests: ["limbo:4"] 
+- id: 8
+  keywords: ["Kris", "Kartrashian"]
+  level: 3
+  name: "Kris Kartrashian"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 1000000
+          max: 2000000
+      description: >-
+        Looks like Michael Jackson when she wears sunglasses
+  quests: ["limbo:"]  
+- id: 9
+  keywords: ["Kim", "Kartrashian"]
+  level: 2
+  name: "Kim Kartrashian"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        Kanyes wife, otherwise, irrelevant.
+  quests: ["limbo:"]  
+- id: 10
+  keywords: ["Kanye", "West"]
+  level: 2
+  name: "Kanye West"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        A saint deserves all the gold
+  quests: ["limbo:"]  
+- id: 11
+  keywords: ["Khloe", "Kartrashian"]
+  level: 2
+  name: "Khloe Kartrashian"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        Loves to sleep with basketball players. 
+  quests: ["limbo:"]  
+- id: 12
+  keywords: ["Kourtney", "Kartrashian"]
+  level: 2
+  name: "Kourtney Kartrashian"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        The mom of the group
+  quests: ["limbo:"]  
+- id: 13
+  keywords: ["Kendall", "Kartrashian"]
+  level: 2
+  name: "Kendall Kartrashian"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        Not actually a Kartrashian, still trashy.
+  quests: ["limbo:"]  
+- id: 14
+  keywords: ["Kylie", "Kartrashian"]
+  level: 2
+  name: "Kylie Kartrashian"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        Not actually a Kartrashian, still trashy.
+  quests: ["limbo:"]  
+
+

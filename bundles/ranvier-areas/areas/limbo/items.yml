@@ -162,3 +162,13 @@
   roomDesc: "Jaydons laptop"
   keywords: ["Lappytop", "jays laptop", "lap top"]
   description: "A computer for your lap"
+- id: 12 
+  name: "Grammy"
+  roomDesc: "Kanyes Grammy"
+  keywords: ["Kanyes grammy" , "Gram gram"]
+  description: "The award kanye won at the grammys"
+- id: 13
+  name: "Sword"
+  roomDesc: "A sword"
+  keywords: ["sword" , "stabby thing"]
+  description: "A long sharp metal stick with a handle to stab people"

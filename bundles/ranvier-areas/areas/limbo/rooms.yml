@@ -228,6 +228,8 @@
   exits:
     - roomId: "limbo:18"
       direction: east
+    - roomId: "limbo:24"
+      direction: west
 - id: 22
   title: "Morgaine's Room"
   description: "The room where Morgaine does her living and sleeping"
@@ -240,3 +242,165 @@
   exits: 
     - roomId: "limbo:18"
       direction: north
+- id: 24
+  title: "The entrance"
+  description: "The entrance to the Kartrashian mansion"
+  exits: 
+    - roomId: "limbo:21"
+      direction: east
+    - roomId: "limbo:25"
+      direction: south
+- id: 25
+  title: "Foyer"
+  description: "The front part of the house with no actual purpose"
+  exits:
+    - roomId: "limbo:24"
+      direction: north
+    - roomId: "limbo:26"
+      direction: south
+- id: 26
+  title: "North Living Room"
+  description: "The room where the Kartrashians discuss taking over the world"
+  exits:
+    - roomId: "limbo:25"
+      direction: north
+    - roomId: "limbo:27"
+      direction: south
+    - roomId: "limbo:33"
+      direction: west
+    - roomId: "limbo:40"
+      direction: east
+- id: 27
+  title: "South Living Room"
+  description: "The other part of the room where the Kartrashians discuss taking over the world"
+  exits:
+    - roomId: "limbo:26"
+      direction: north
+    - roomId: "limbo:28"
+      direction: south
+- id: 28
+  title: "Kendall and Kylies room"
+  description: "The bedroom of the youngest girls in the family"
+  npcs: ["limbo:14" , "limbo:13"]
+  exits: 
+    - roomId: "limbo:27"
+      direction: north
+    - roomId: "limbo:29"
+      direction: south
+- id: 29
+  title: "Kendall and Kylies bathroom"
+  description: "Kendall and Kylie do hygeine here"
+  exits:
+    - roomId: "limbo:28"
+      direction: north
+- id: 30
+  title: "Kourtneys bathroom"
+  description: "Kourtney does hygeine here"
+  exits:
+    - roomId: "limbo:31"
+      direction: north
+- id: 31
+  title: "Kourtneys room"
+  description: "The room where Kourtney lives"
+  npcs: ["limbo:12"]
+  exits:
+    - roomId: "limbo:32"
+      direction: north
+    - roomId: "limbo:30"
+      direction: south
+- id: 32
+  title: "South hall"
+  description: "connects rooms"
+  exits:
+    - roomId: "limbo:31"
+      direction: south
+    - roomId: "limbo:33"
+      direction: north
+    - roomId: "limbo:37"
+      direction: west
+- id: 33
+  title: "north hall"
+  description: "connects rooms"
+  exits:
+    - roomId: "limbo:34"
+      direction: north
+    - roomId: "limbo:32"
+      direction: south
+    - roomId: "limbo:36"
+      direction: west
+    - roomId: "limbo:26"
+      direction: east
+- id: 34
+  title: "Kim and Kanyes bedroom"
+  description: "The room in which Kim and Kanye live"
+  npcs: ["limbo:9" , "limbo:10"]
+  exits:
+    - roomId: "limbo:33"
+      direction: south
+    - roomId: "limbo:35"
+      direction: west
+- id: 35
+  title: "Kim and Kanyes bathroom"
+  description: "Where Kim and Kanye do hygeine"
+  exits:
+    - roomId: "limbo:34"
+      direction: east
+- id: 36
+  title: "Khloes Bedroom"
+  description: "The room in which Khloe lives"
+  npcs: ["limbo:11"]
+  exits:
+    - roomId: "limbo:33"
+      direction: east
+    - roomId: "limbo:39"
+      direction: west
+- id: 37
+  title: "Kris' Bedroom"
+  description: "The room where Kris does her living"
+  npcs: ["limbo:8"]
+  exits:
+    - roomId: "limbo:32"
+      direction: east
+    - roomId: "limbo:38"
+      direction: west
+- id: 38
+  title: "Kris' bathroom"
+  description: "The room where Kris does her hygeine"
+  exits:
+    - roomId: "limbo:37"
+      direction: east
+- id: 39
+  title: "Khloes bathroom"
+  description: "The room where Khloe does her hygeine"
+  exits:
+    - roomId: "limbo:36"
+      direction: east
+- id: 40
+  title: "North kitchen"
+  description: "The room filled with unnecessarily expensive and organic food"
+  exits:
+    - roomId: "limbo:26"
+      direction: west
+    - roomId: "limbo:43"
+      direction: east
+    - roomId: "limbo:41"
+      direction: south
+- id: 41
+  title: "South Kitchen"
+  description: "The other part of the room filled with unnecessarily expensive and organic food"
+  exits:
+    - roomId: "limbo:40"
+      direction: north
+    - roomId: "limbo:42"
+- id: 42
+  title: "Dining room"
+  description: "The room where the Kartrashians eat their food as a family...usually ends in a brawl"
+  exits:
+    - roomId: "limbo:41"
+      direction: west
+- id: 43
+  title: "Main bathroom"
+  description: "Where the entire Kartrashian family can use the bathroom"
+  exits:
+    - roomId: "limbo:40"
+      direction: west
