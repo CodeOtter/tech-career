@@ -253,6 +253,7 @@
 - id: 25
   title: "Foyer"
   description: "The front part of the house with no actual purpose"
+  ncps: ["limbo:10"]
   exits:
     - roomId: "limbo:24"
       direction: north
@@ -333,7 +334,7 @@
 - id: 34
   title: "Kim and Kanyes bedroom"
   description: "The room in which Kim and Kanye live"
-  npcs: ["limbo:9" , "limbo:10"]
+  npcs: ["limbo:9"]
   exits:
     - roomId: "limbo:33"
       direction: south
@@ -392,6 +393,7 @@
     - roomId: "limbo:40"
       direction: north
     - roomId: "limbo:42"
+      direction: east
 - id: 42
   title: "Dining room"
   description: "The room where the Kartrashians eat their food as a family...usually ends in a brawl"

@@ -113,43 +113,45 @@ Once you find some bring it back to the rat, use '<white>quest log</white>' to f
         reward: (quest, player) => {
           player.emit('experience', LevelUtil.mobExp(quest.config.level) * 3);
           say(player);
-          say(player, `Congrats you dont suck`, 80);
+          say(player, "Congrats you dont suck", 80);
         }
       },
       goals: [
         {
           type: FetchGoal,
           config: {
-            title: 'Found Laptop',
+            title: "Found Laptop",
             count: 1,
             item: "limbo:11",
-            removeItem: true,
+            removeItem: true
           }
         }
       ]
     },
-    
+
     5: {
       config: {
         title: "Get Kanye his Grammy back",
         level: 1,
-        desc: `Kanyes Grammy was stolen by Kris Kartrashian. Kill her to get it and then bring it back to him.`,
+        desc: "Kanyes Grammy was stolen by Kris Kartrashian. Kill her to get it and then bring it back to him.",
         repeatable: true,
         reward: (quest, player) => {
-          player.emit('experience', LevelUtil.mobExp(quest.config.level) * 3);
+          player.emit("experience", LevelUtil.mobExp(quest.config.level) * 3);
           say(player);
-          say(player, `Congrats you dont suck`, 80);
+          say(player, "Congrats you dont suck", 80);
         }
       },
       goals: [
         {
           type: FetchGoal,
           config: {
-            title: 'Found Grammy',
+            title: "Found Grammy",
             count: 1,
             item: "limbo:12",
-            removeItem: true,
+            removeItem: true
           }
         }
       ]
-    },
+    }
+  };
+};

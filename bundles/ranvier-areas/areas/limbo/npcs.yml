@@ -115,6 +115,8 @@
   name: "Kris Kartrashian"
   behaviors:
     lootable:
+      pools:
+        - "limbo:12": 100
       # currencies is a list of currencies this npc can possibly drop and the amount range
       # the currency key is arbitrary so if you want a new currency just add a new key
       # the key must be formatted_like_this though, for rendering/saving purposes
@@ -124,8 +126,6 @@
           max: 2000000
       description: >-
         Looks like Michael Jackson when she wears sunglasses
-  items: ["limbo:12" , "limbo:13"]
-  
 - id: 9
   keywords: ["Kim", "Kartrashian"]
   level: 2
@@ -141,7 +141,6 @@
           max: 20
       description: >-
         Kanyes wife, otherwise, irrelevant.
-    
 - id: 10
   keywords: ["Kanye", "West"]
   level: 2
@@ -157,7 +156,7 @@
           max: 20
       description: >-
         A saint deserves all the gold
-   
+  quests: ["limbo:5"]
 - id: 11
   keywords: ["Khloe", "Kartrashian"]
   level: 2
