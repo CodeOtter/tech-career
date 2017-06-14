@@ -1,0 +1,14 @@
+- id: 1
+  name: "Ticket: Move the Pixel"
+  type: WEAPON
+  roomDesc: "Ticket"
+  keywords: [ "ticket", "move", "pixel" ]
+  description: "A basic ticket to move pixels, complete with inane comments and an extremely high priority."
+  slot: 'wield'
+  level: 1
+  itemLevel: 1
+  quality: common
+  properties:
+    minDamage: 7
+    maxDamage: 15
+    speed: 2.8

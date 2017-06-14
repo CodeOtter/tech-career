@@ -1,0 +1,34 @@
+- id: 1
+  title: First Memory
+  description: "Your mind disintegrates as if ten thousand maggots fed upon your cognition. The glass lands upon the face of your mother's boyfriend. Your muscles tense up and, as usual, she's screaming and he's silent. Your younger brothers are crying and, having been here so many times, you've disconnected from the whole situation.  Memories of your first pet, an ant, help your five-year old mind cope with the situation.  Here's your chance to change the future: Do you head <bold><yellow>south</yellow></white> to <bold>fight</bold> against your mother's hysteria, <bold><yellow>west</yellow></white> to <bold>flee</bold> from the violent reality, or <bold><yellow>east</yellow></white> to <bold>capitulate</bold> and assist your mother?"
+  exits:
+    - roomId: "past:2"
+      direction: south
+      leaveMessage: " fights back against the situation."
+    - roomId: "past:3"
+      direction: west
+      leaveMessage: " runs away from the situation."
+    - roomId: "past:4"
+      direction: east
+      leaveMessage: " capitulates and supports the aggressor."
+- id: 2
+  title: Kitchen Conflict
+  description: "When the glass strikes his cheek, you pipe up, shouting as loud as a five-year old can. The boyfriend wilts, jealous that a child had greater spine to the situation and eyes you with a burning jealously. Your mother, no longer concerned with the imagined slights against the boyfriend, turns her fury to you. She generates an exquisite cacophony of guilt, forging upon your neurons the cost of defying her.  You lick your wounds and eye <bold><yellow>south</yellow></bold> to leave this memory."
+  exits:
+    - roomId: "past:5"
+      direction: south
+      leaveMessage: " leaves this terrible memory."
+- id: 3
+  title: Kitchen Flight
+  description: "You can’t remember if it struck your mother or her boyfriend.  You don’t even her the shattering.  All you can remember is your pet ant and its drive.  Ants need their hive, but this ant managed to survived without it. Your mind makes note of breaking dependencies.  Your peers will never forgive you for such an awareness.  THe conflict has no impact upon you, and you see the  <bold><yellow>south</yellow></bold> as the safest way out of this memory."
+  exits:
+    - roomId: "past:5"
+      direction: south
+      leaveMessage: " leaves this terrible memory."
+- id: 5
+  title: Kitchen Capitulate
+  description: "She was right. Her boyfriend was wrong for whatever she said he did and she benefited from your support.  Sustaining her pride was one of your deepest memories and you were smart enough to understand the relationship between your stability and her ego.  Your memory recalls heading  <bold><yellow>south</yellow></bold> to protect your mother."
+  exits:
+    - roomId: "past:5"
+      direction: south
+      leaveMessage: " leaves this terrible memory."
