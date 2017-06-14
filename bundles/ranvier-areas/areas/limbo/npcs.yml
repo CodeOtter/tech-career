@@ -124,7 +124,8 @@
           max: 2000000
       description: >-
         Looks like Michael Jackson when she wears sunglasses
-  quests: ["limbo:"]  
+  items: ["limbo:12" , "limbo:13"]
+  
 - id: 9
   keywords: ["Kim", "Kartrashian"]
   level: 2
@@ -140,7 +141,7 @@
           max: 20
       description: >-
         Kanyes wife, otherwise, irrelevant.
-  quests: ["limbo:"]  
+    
 - id: 10
   keywords: ["Kanye", "West"]
   level: 2
@@ -156,7 +157,7 @@
           max: 20
       description: >-
         A saint deserves all the gold
-  quests: ["limbo:"]  
+   
 - id: 11
   keywords: ["Khloe", "Kartrashian"]
   level: 2
@@ -172,7 +173,7 @@
           max: 20
       description: >-
         Loves to sleep with basketball players. 
-  quests: ["limbo:"]  
+    
 - id: 12
   keywords: ["Kourtney", "Kartrashian"]
   level: 2
@@ -188,7 +189,7 @@
           max: 20
       description: >-
         The mom of the group
-  quests: ["limbo:"]  
+    
 - id: 13
   keywords: ["Kendall", "Kartrashian"]
   level: 2
@@ -204,7 +205,7 @@
           max: 20
       description: >-
         Not actually a Kartrashian, still trashy.
-  quests: ["limbo:"]  
+    
 - id: 14
   keywords: ["Kylie", "Kartrashian"]
   level: 2
@@ -220,6 +221,5 @@
           max: 20
       description: >-
         Not actually a Kartrashian, still trashy.
-  quests: ["limbo:"]  
-
+ 
 
