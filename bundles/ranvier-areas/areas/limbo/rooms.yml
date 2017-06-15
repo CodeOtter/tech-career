@@ -255,7 +255,7 @@
 - id: 25
   title: "Foyer"
   description: "The front part of the house with no actual purpose"
-  ncps: ["limbo:10"]
+  npcs: ["limbo:10"]
   exits:
     - roomId: "limbo:24"
       direction: north
