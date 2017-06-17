@@ -12,23 +12,91 @@
       direction: east
       leaveMessage: " capitulates and supports the aggressor."
 - id: 2
-  title: Kitchen Conflict
+  title: First Resolution - Conflict
   description: "When the glass strikes his cheek, you pipe up, shouting as loud as a five-year old can. The boyfriend wilts, jealous that a child had greater spine to the situation and eyes you with a burning jealously. Your mother, no longer concerned with the imagined slights against the boyfriend, turns her fury to you. She generates an exquisite cacophony of guilt, forging upon your neurons the cost of defying her.  You lick your wounds and eye <bold><yellow>south</yellow></bold> to leave this memory."
   exits:
     - roomId: "past:5"
       direction: south
       leaveMessage: " leaves this terrible memory."
 - id: 3
-  title: Kitchen Flight
-  description: "You can’t remember if it struck your mother or her boyfriend.  You don’t even her the shattering.  All you can remember is your pet ant and its drive.  Ants need their hive, but this ant managed to survived without it. Your mind makes note of breaking dependencies.  Your peers will never forgive you for such an awareness.  THe conflict has no impact upon you, and you see the  <bold><yellow>south</yellow></bold> as the safest way out of this memory."
+  title: First Resolution - Flight
+  description: "You can’t remember if it struck your mother or her boyfriend.  You don’t even hear the shattering.  All you can remember is your pet ant.  Ants need their hive, but this ant managed to survived without it. Your mind makes note of the ant breaking its dependencies.  Your peers will never forgive you for such an awareness.  Your mother’s fury is a distant concern, and you see the  <bold><yellow>south</yellow></bold> as the safest way out of this memory."
+  exits:
+    - roomId: "past:5"
+      direction: south
+      leaveMessage: " leaves this terrible memory."
+- id: 4
+  title: First Resolution - Capitulate
+  description: "She was right. Her boyfriend was wrong for whatever she said he did and you’ll never forget the way she smiled at you.  Sustaining her pride was one of your deepest memories and you were smart enough to understand the relationship between your stability and her ego.  Your memory recalls heading  <bold><yellow>south</yellow></bold> to protect your mother."
   exits:
     - roomId: "past:5"
       direction: south
       leaveMessage: " leaves this terrible memory."
 - id: 5
-  title: Kitchen Capitulate
-  description: "She was right. Her boyfriend was wrong for whatever she said he did and she benefited from your support.  Sustaining her pride was one of your deepest memories and you were smart enough to understand the relationship between your stability and her ego.  Your memory recalls heading  <bold><yellow>south</yellow></bold> to protect your mother."
+  title: Second Memory
+  description: "You remember the projects.  The smell, the heat, and the violent mood in the air are charred into your memories.  You didn’t know that Detroit had collapsed after two decades of civil strife and outsourcing, or that this collapse spread to by railway to any connected Eastern seaboard export hub.  All you knew was that poverty was normal and that the worst and most base instincts of human nature reigned supreme.  Your friends are older than you and fit the profile of thugs and future criminals.  You’re a malnourished child with a low threat profile.  You all want candy, so do you go <bold><yellow>south</bold></yellow> and <bold><white>aggressively</white></bold> bum rush a local candy store, go <bold><yellow>west</bold></yellow> and <bold><white>cowardly</white></bold> back out, or go <bold><yellow>east</bold></yellow> and <bold><white>quietly</white></bold> steal the candy while your friends cause a distraction?"
   exits:
-    - roomId: "past:5"
+    - roomId: "past:6"
       direction: south
-      leaveMessage: " leaves this terrible memory."
+      leaveMessage: " charges into the situation."
+    - roomId: "past:7"
+      direction: west
+      leaveMessage: " runs away from the situation."
+    - roomId: "past:8"
+      direction: east
+      leaveMessage: " stays in his lane and sees the plan through."
+- id: 6
+  title: Second Resolution - Conflict
+  description: "You and your pack of young thugs storm the candy shop, causing a ruckus that disturbs customers and the owner.  You knock over stands, swipe bags of candy, and shout out a mixture of laughter and incoherent gibberish.  The spree was successful, resulting in a dangerous fusion of adrenaline and sugar, a stepping stone to later risk taking behavior.  Your memories tell you you went <bold><yellow>south</yellow></bold> after this."
+  exits:
+    - roomId: "past:9"
+      direction: south
+      leaveMessage: " leaves this exciting memory."
+- id: 7
+  title: Second Resolution - Flight
+  description: "You tried to slink out of the situation and your friends clown on you.  Hard.  You tell them you’re just as bad as they say and that you’d ruin their plan anyways.  Your logic convinces them they are right and they rush the store.  A few minutes later, they run out, carrying armfuls of candy.  You regret your decision as they gleefully snack on their rewards and make fun of you even more than usual.  You run to the <bold><yellow>south</yellow></bold> to escape this embarrassment."
+  exits:
+    - roomId: "past:9"
+      direction: south
+      leaveMessage: " slinks away from this embarrassment."
+- id: 8
+  title: Second Resolution - Capitulate
+  description: "Your thug friends rush the place and cause a loud distraction.  You walk in afterwards, act scared of your friends like everyone else, but stuff your pockets with bags of candy.  The store owner manages to chase out your pals and you sneak out with other dissatisfied and appalled customers.  You all meet up at the agreed place and the agreed time to distribute the goods.  You remember the admiration of your peers due to your cleverness for the rest of your life.  You remember going <bold><yellow>south</yellow></bold> after this."
+  exits:
+    - roomId: "past:9"
+      direction: south
+      leaveMessage: " leaves this exciting memory."
+- id: 9
+  title: Third Memory
+  description: "The VHS is flashing some time in the early afternoon.  Below it lies a huge television, manufactured by a failing American company.  Your mother swapped her last boyfriend with someone with slightly more material potential.  Sadly, your mother is off somewhere else, hustling sideways on some dumb shit, and has left you and your brothers alone with this guy and his friends.  Him and his friends puts you and your younger brother in front of his massive television.  They turn it on and pornographic videos are playing.  Him and his friends are undoing their pants.  Do you go  <bold><yellow>south</yellow></bold> and <bold><white>fight</white></bold> back against these pedophiles, go <bold><yellow>west</yellow></bold> and <bold><white>pretend</white></bold> you are somewhere else, or go <bold><yellow>east</yellow></bold> and <bold><white>absorb</white></bold> the worst of the abuse so your brother doesn’t?"
+  exits:
+    - roomId: "past:10"
+      direction: south
+      leaveMessage: " fights back against sexual abuse."
+    - roomId: "past:11"
+      direction: west
+      leaveMessage: " tunes out to the trauma."
+    - roomId: "past:12"
+      direction: east
+      leaveMessage: " draws attention to protect the brother."
+- id: 10
+  title: Third Resolution - Conflict
+  description: "You realize the situation you’re in and you lash out.  The men laugh and easily suppress you while taking turns having their way with you.  Your brother watches in horror as you scream, and through the fog of trauma, you vaguely recall never seeing him become a target of their aggression.  You saved him as best you could at the cost of yourself,  It will take you twelve years before you can remember this event in detail while the trauma subconsciously manifests with your every social interaction during that time span, isolating you from everyone except those who endured similar trauma.  You can’t even remember going <bold><yellow>south</yellow></bold> to escape this horrifying event."
+  exits:
+    - roomId: "past:9"
+      direction: south
+      leaveMessage: " leaves this horrifying memory."
+- id: 11
+  title: Third Resolution - Flight
+  description: "Your mother’s boyfriend and his friends enjoy themselves as they dominate you and your brother.  You not only escape internally from this situation, you black out the memory entirely and won’t be able to remember it until twelve years after the fact.  Your brother will never talk to you again and you will ensure an endless source of fury that no amount of wealth will ever extinguish.  You think you went <bold><yellow>south</yellow></bold>, but it’s hard to remember this moment."
+  exits:
+    - roomId: "past:9"
+      direction: south
+      leaveMessage: " slinks away from this embarrassment."
+- id: 12
+  title: Third Resolution - Capitulate
+  description: "You thought if you could seduce these men they’d leave your brother alone.  Sadly, your eager  submission to their will left you uninteresting.  resulting in your brother taking the worst of their rape.  You wouldn’t remember the lesson you’ve learned, but when you do, you’ll conclude that everything is about sex except sex… sex is about power, therefore, those who resist are the most attractive.  You’ll never forgive yourself for not understanding this early on, and your brother will never forgive you for not protecting him.  <bold><yellow>South</yellow></bold> is the only way out of this disaster."
+  exits:
+    - roomId: "past:9"
+      direction: south
+      leaveMessage: " leaves this exciting memory."
