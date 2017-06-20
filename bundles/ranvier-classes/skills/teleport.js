@@ -1,8 +1,5 @@
-//this is everything i have in the teleport.js file
-//i havent editted it since we've been talking about it so its probably all wrong but i guess its a starting place
-
 /**
- * DoT (Damage over time) skill
+ * Teleport skill
  */
 module.exports = (srcPath) => {
   const Broadcast = require(srcPath + "Broadcast");
@@ -26,26 +23,33 @@ module.exports = (srcPath) => {
     cooldown,
 
     run: state => function (args, player, target) {
-      if(/^[a-zA-Z_\-0-9]+\:[0-9]+$/.test(target)) {
-        //herre
-        return Broadcast.sayAt(player, 'No such area:room reference exists.');
+      if(/^[a-zA-Z_\-0-9]+\:[0-9]+$/.test(target)) {        return Broadcast.sayAt(player, 'No such area:room reference exists.');
       }
       
       var targetRoom = state.RoomManager.getRoom(target);
       if (!targetRoom) {
         return Broadcast.sayAt(player, 'That room:area doesn\'t exist');
-        //here
       }
                                
+      const oldRoom = player.room;
+      
       player.moveTo(targetRoom, () => {
         Broadcast.sayAt(player, '<b><green>You snap your finger and instantly appear in a new room.</green></b>\r\n');
         state.CommandManager.get('look').execute('', player);
+        if (player.isInCombat()) {
+          player.removeFromCombat();
+        }
+        player.followers.forEach(follower => {
+            follower.unfollow();
+            if (follower instanceof Player) {
+                Broadcast.sayAt(follower, `You stop following ${player.name}.`)
+            }
+        });
+        Broadcast.sayAt(oldRoom, `${player.name} teleported away.`);
+        Broadcast.sayAtExcept(targetRoom, `${player.name} teleported here.`, player);
       });
-        
-        if (player.isInCombat()) {  player.removeFromCombat(); }
-      Broadcast.sayAt(oldRoom, `${player.name} teleported away.`);
-      Broadcast.sayAtExcept(targetRoom, `${player.name} teleported here.`, player);
     },
+
 
     info: () => {
       return `Teleport to room `;

@@ -241,6 +241,9 @@
       direction: north
 - id: 23
   title: "Morgaine's Bathroom"
+  script: 'teleportTo'
+  behaviors: 
+    commands: ['teleport']
   description: "The room where Morgaine takes care of her hygeine"
   npcs: ["limbo:15"]
   exits: 
@@ -337,6 +340,9 @@
       direction: east
 - id: 34
   title: "Kim and Kanyes bedroom"
+  script: 'teleportFrom'
+  behaviors:
+    commands: ['telport']
   description: "The room in which Kim and Kanye live"
   npcs: ["limbo:9"]
   exits:
