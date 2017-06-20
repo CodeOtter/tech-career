@@ -220,5 +220,48 @@
           max: 20
       description: >-
         Not actually a Kartrashian, still trashy.
- 
-
+- id: 15
+  keywords: ["Morg", "Morgaine"]
+  level: 1
+  name: "Morning Fart"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        shit literal shit
+- id: 16
+  keywords: ["Deni", "Denison"]
+  level: 
+  name: "Denison"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        mom 
+- id: 17
+  keywords: ["Pat", "Patrick"]
+  level: 
+  name: "Patrick"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        angery fluffy man

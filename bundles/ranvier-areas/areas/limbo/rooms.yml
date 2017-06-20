@@ -219,6 +219,7 @@
 - id: 20
   title: "Master Bedroom"
   description: "The room where the masters sleep"
+  npcs: ["limbo:16" , "limbo:17"]
   exits:
     - roomId: "limbo:17"
       direction: east
@@ -241,6 +242,7 @@
 - id: 23
   title: "Morgaine's Bathroom"
   description: "The room where Morgaine takes care of her hygeine"
+  npcs: ["limbo:15"]
   exits: 
     - roomId: "limbo:18"
       direction: north

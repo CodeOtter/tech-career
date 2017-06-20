@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * DoT (Damage over time) skill
  */
@@ -14,12 +12,12 @@ module.exports = (srcPath) => {
   const tickInterval = 3;
   
   return {
-    name: "CSripple",
-    type: SkillType.SKILL,
+    name: "Cripple",
+    type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,
     resource: {
-      attribute: "energy",
+      attribute: "mana",
       cost
     },
     cooldown,
