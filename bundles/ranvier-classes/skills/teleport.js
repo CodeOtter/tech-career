@@ -21,32 +21,12 @@ module.exports = (srcPath) => {
     cooldown,
 
     run: state => function (args, player, target) {
-      if (/^[a-zA-Z_\-0-9]+\:[0-9]+$/.test(target)) {
-        return Broadcast.sayAt(player, 'No such area:room reference exists.');
-      }
-      
-      var targetRoom = state.RoomManager.getRoom(target);
-      if (!targetRoom) {
-        return Broadcast.sayAt(player, 'That room:area doesn\'t exist');
-      }
+      Rules.teleport(state, {
+        toPlayer: '<b><green>You snap your finger and instantly appear in a new room.</green></b>\r\n',
+        toRoom: `${player.name} teleported away.`,
+        toTarget: `${player.name} teleported here.`
+      }, player, target);
                                
-      const oldRoom = player.room;
-      
-      player.moveTo(targetRoom, () => {
-        Broadcast.sayAt(player, '<b><green>You snap your finger and instantly appear in a new room.</green></b>\r\n');
-        state.CommandManager.get('look').execute('', player);
-        if (player.isInCombat()) {
-          player.removeFromCombat();
-        }
-        player.followers.forEach(follower => {
-          follower.unfollow();
-          if (follower instanceof Player) {
-            Broadcast.sayAt(follower, `You stop following ${player.name}.`);
-          }
-        });
-        Broadcast.sayAt(oldRoom, `${player.name} teleported away.`);
-        Broadcast.sayAtExcept(targetRoom, `${player.name} teleported here.`, player);
-      });
     },
 
 
