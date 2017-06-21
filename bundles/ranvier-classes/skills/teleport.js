@@ -23,7 +23,8 @@ module.exports = (srcPath) => {
     cooldown,
 
     run: state => function (args, player, target) {
-      if(/^[a-zA-Z_\-0-9]+\:[0-9]+$/.test(target)) {        return Broadcast.sayAt(player, 'No such area:room reference exists.');
+      if (/^[a-zA-Z_\-0-9]+\:[0-9]+$/.test(target)) {
+          return Broadcast.sayAt(player, 'No such area:room reference exists.');
       }
       
       var targetRoom = state.RoomManager.getRoom(target);

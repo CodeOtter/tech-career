@@ -243,7 +243,7 @@
   title: "Morgaine's Bathroom"
   script: 'teleportTo'
   behaviors: 
-    commands: ['teleport']
+    commands: ['portal']
   description: "The room where Morgaine takes care of her hygeine"
   npcs: ["limbo:15"]
   exits: 
@@ -342,7 +342,7 @@
   title: "Kim and Kanyes bedroom"
   script: 'teleportFrom'
   behaviors:
-    commands: ['telport']
+    commands: ['portal']
   description: "The room in which Kim and Kanye live"
   npcs: ["limbo:9"]
   exits:
