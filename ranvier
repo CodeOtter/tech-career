@@ -49,6 +49,8 @@ const Data = require('./src/Data');
 // Wrapper for ranvier.json
 const Config = require('./src/Config');
 
+const srcPath = __dirname + '/src/';
+
 // cmdline options
 commander
   .version(pkg.version)
@@ -93,6 +95,8 @@ let server;
 function init(restartServer) {
   Logger.log("START - Loading entities");
   restartServer = typeof restartServer === 'undefined' ? true : restartServer;
+
+  require('./rules').initialize(srcPath);
 
   GameState = {
     AccountManager: new AccountManager(),

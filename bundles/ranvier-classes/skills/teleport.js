@@ -8,8 +8,6 @@ module.exports = (srcPath) => {
   // config placed here just for easy copy/paste of this skill later on
   const cooldown = 20;
   const cost = 50;
-  const duration = 15 * 1000;
-  const tickInterval = 3;
   
   return {
     name: "Teleport",
@@ -24,7 +22,7 @@ module.exports = (srcPath) => {
 
     run: state => function (args, player, target) {
       if (/^[a-zA-Z_\-0-9]+\:[0-9]+$/.test(target)) {
-          return Broadcast.sayAt(player, 'No such area:room reference exists.');
+        return Broadcast.sayAt(player, 'No such area:room reference exists.');
       }
       
       var targetRoom = state.RoomManager.getRoom(target);
@@ -41,10 +39,10 @@ module.exports = (srcPath) => {
           player.removeFromCombat();
         }
         player.followers.forEach(follower => {
-            follower.unfollow();
-            if (follower instanceof Player) {
-                Broadcast.sayAt(follower, `You stop following ${player.name}.`)
-            }
+          follower.unfollow();
+          if (follower instanceof Player) {
+            Broadcast.sayAt(follower, `You stop following ${player.name}.`);
+          }
         });
         Broadcast.sayAt(oldRoom, `${player.name} teleported away.`);
         Broadcast.sayAtExcept(targetRoom, `${player.name} teleported here.`, player);

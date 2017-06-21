@@ -31,8 +31,30 @@
   },
   "level": 1,
   "name": "Admin",
-  "room": "limbo:1",
-  "effects": [],
+  "room": "limbo:23",
+  "effects": [
+    {
+      "id": "regen",
+      "elapsed": 14439,
+      "state": {
+        "magnitude": 15,
+        "lastTick": 2187,
+        "ticks": 5
+      },
+      "config": {
+        "autoActivate": true,
+        "description": "You are regenerating over time.",
+        "duration": "inf",
+        "hidden": true,
+        "maxStacks": 0,
+        "name": "Regenerate",
+        "persists": true,
+        "tickInterval": 3,
+        "type": "regen",
+        "unique": true
+      }
+    }
+  ],
   "experience": 0,
   "inventory": {
     "items": [],
@@ -45,7 +67,35 @@
   "prompt": "[ %health.current%/%health.max% <b>hp</b> %energy.current%/%energy.max% <b>influence</b> ]",
   "quests": {
     "completed": [],
-    "active": []
+    "active": [
+      [
+        "limbo:1",
+        {
+          "state": [
+            {
+              "state": {
+                "count": 0
+              }
+            },
+            {
+              "state": {
+                "count": 0
+              }
+            },
+            {
+              "state": {
+                "equipped": false
+              }
+            },
+            {
+              "state": {
+                "equipped": false
+              }
+            }
+          ]
+        }
+      ]
+    ]
   },
   "role": 2,
   "equipment": {}
