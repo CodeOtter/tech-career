@@ -461,6 +461,7 @@
 - id: 49 
   title: "Ashley's Room"
   description: "Ashley's Room"
+  npcs: ["limbo:18"]
   exits:
     - roomId: "limbo:50"
       direction: south
