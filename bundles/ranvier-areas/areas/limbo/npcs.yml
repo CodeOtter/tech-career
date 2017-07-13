@@ -265,3 +265,18 @@
           max: 20
       description: >-
         angery fluffy man
+- id: 18
+  keywords: ["Ash", "Ashley"]
+  level: 
+  name: "Ashley"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        A basic bitch who doesnt know what she wants in life
