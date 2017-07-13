@@ -17,8 +17,6 @@
       direction: west
     - roomId: "limbo:11"
       direction: up
-    - roomId: "past:1"
-      direction: north
 - id: 2
   title: "The Rabbit Hole"
   description: >-
