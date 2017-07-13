@@ -295,6 +295,8 @@
       direction: north
     - roomId: "limbo:29"
       direction: south
+    - roomId: "limbo:44"
+      direction: west
 - id: 29
   title: "Kendall and Kylies bathroom"
   description: "Kendall and Kylie do hygeine here"
@@ -416,3 +418,73 @@
   exits:
     - roomId: "limbo:40"
       direction: west
+- id: 44
+  title: "Entrance"
+  description: "Entrance to Ashley's house"
+  exits:
+    - roomId: "limbo:28"
+      direction: east
+    - roomId: "limbo:45"
+      direction: south
+- id: 45
+  title: "Ashley's Living Room"
+  description: "Where Ashley's fam fucks shit up"
+  exits:
+    - roomId: "limbo:44"
+      direction: north
+    - roomId: "limbo:47"
+      direction: west
+    - roomId: "limbo:46"
+      direction: south
+- id: 46
+  title: "Ashley's Dining Room"
+  description: "Where Ashley fucks food up"
+  exits:
+    - roomId: "limbo:45"
+      direction: north
+    - roomId: "limbo:48"
+      direction: west
+    - roomId: "limbo:50"
+      direction: east
+- id: 47
+  title: "Lizette's Room"
+  description: "Where the queen rests"
+  exits:
+    - roomId: "limbo:45"
+      direction: east
+- id: 48
+  title: "Ashley's Kitchen"
+  description: "Where cooking is attempted"
+  exits:
+    - roomId: "limbo:46"
+      direction: east
+- id: 49 
+  title: "Ashley's Room"
+  description: "Ashley's Room"
+  exits:
+    - roomId: "limbo:50"
+      direction: south
+- id: 50
+  title: "Hall in Ashley's home"
+  description: "connects rooms"
+  exits:
+    - roomId: "limbo:49"
+      direction: north
+    - roomId: "limbo:51"
+      direction: east
+    - roomId: "limbo:52"
+      direction: south
+    - roomId: "limbo:46"
+      direction: west
+- id: 51
+  title: "Ethan's Room"
+  description: "Where you can always find Ethan playing video games"
+  exits:
+    - roomId: "limbo:50"
+      direction: west
+- id: 52 
+  title: "Main Bathroom"
+  description: "Main bathroom of the house"
+  exits:
+    - roomId: "limbo:50"
+      direction: north
