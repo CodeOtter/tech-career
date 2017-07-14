@@ -8,15 +8,15 @@ module.exports = (srcPath) => {
   const Damage = require(srcPath + 'Damage');
   const SkillType = require(srcPath + 'SkillType');
 
-  const damagePercent = 100;
+  const damagePercent = 50;
   const manaCost = 20;
 
   function getDamage(player) {
-    return player.getAttribute('intellect') * (damagePercent / 100);
+    return player.getAttribute('intellect') * (damagePercent / 50);
   }
 
   return {
-    name: 'Hack',
+    name: 'damage',
     type: SkillType.SPELL,
     requiresTarget: true,
     initiatesCombat: true,
@@ -35,16 +35,16 @@ module.exports = (srcPath) => {
         source: this
       });
 
-      Broadcast.sayAt(player, '<bold>With a wave of your hand, you unleash a poorly documented, untested <red>hack</red> at your target!</bold>');
-      Broadcast.sayAtExcept(player.room, `<bold>With a wave of their hand, ${player.name} unleashes a poorly documented, untested <red>hack</red> at ${target.name}!</bold>`, [player, target]);
+      Broadcast.sayAt(player, '<bold>You be causin <red>damage</red>, congrats.</bold>');
+      Broadcast.sayAtExcept(player.room, `<bold> ${player.name} be causin <red>damage</red> to ${target.name}!</bold>`, [player, target]);
       if (!target.isNpc) {
-        Broadcast.sayAt(target, `<bold>With a wave of their hand, ${player.name} unleashes a poorly documented, untested <red>hack</red> at you!</bold>`);
+        Broadcast.sayAt(target, `<bold> ${player.name} is about to mess your whole shit up</bold>`);
       }
       damage.commit(target);
     },
 
     info: (player) => {
-      return `Hurl a magical code hack at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
+      return `Hurl a magical damage spell at your target dealing ${damagePercent}% of your Intellect as Fire damage.`;
     }
   };
 };
