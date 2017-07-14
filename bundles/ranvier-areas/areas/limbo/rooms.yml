@@ -480,6 +480,7 @@
 - id: 50
   title: "Hall in Ashley's home"
   description: "connects rooms"
+  npcs: ["limbo:22"]
   exits:
     - roomId: "limbo:49"
       direction: north

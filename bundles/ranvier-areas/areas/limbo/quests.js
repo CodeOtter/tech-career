@@ -152,6 +152,30 @@ Once you find some bring it back to the rat, use '<white>quest log</white>' to f
           }
         }
       ]
+    },
+
+    6: {
+      config: {
+        title: "Kill devil spider",
+        level: 1,
+        requires: [ "limbo:50" ],
+        autoComplete: true,
+        desc: `There is a big ass spider in Ashley's hall
+
+- Use '<white>attack spider</white>' to start combat against the spider
+- Once it's dead any loot it drops will be in its corpse on the ground. You can use '<white>look in corpse</white>' to check again or '<white>loot corpse</white>' to retrieve all your loot.`,
+        reward: (quest, player) => {
+          player.emit('experience', LevelUtil.mobExp(quest.config.level) * 5);
+
+          say(player, `<b><cyan>Hint: You can get the loot from enemies with '<white>get <item> corpse</white>' but be quick about it, the corpse will decay after some time.</cyan>`, 80);
+        }
+      },
+      goals: [
+        {
+          type: KillGoal,
+          config: { title: "Kill an spider", npc: "limbo:22", count: 1 }
+        }
+      ]
     }
   };
 };
