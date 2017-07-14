@@ -218,8 +218,8 @@
   itemLevel: 10
   level: 1
   properties:
-    minDamage: 10
-    maxDamage: 10
+    minDamage: 15
+    maxDamage: 20
     speed: 2.8
     stats:
       strength: 2
