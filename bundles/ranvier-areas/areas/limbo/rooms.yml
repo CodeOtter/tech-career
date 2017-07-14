@@ -238,6 +238,8 @@
   exits: 
     - roomId: "limbo:18"
       direction: north
+  items:
+    - id: "limbo:21"
 - id: 23
   title: "Morgaine's Bathroom"
   script: 'teleportTo'
