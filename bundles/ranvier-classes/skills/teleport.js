@@ -25,8 +25,7 @@ module.exports = (srcPath) => {
         toPlayer: '<b><green>You snap your finger and instantly appear in a new room.</green></b>\r\n',
         toRoom: `${player.name} teleported away.`,
         toTarget: `${player.name} teleported here.`
-      }, player, target);
-                               
+      }, player, target);                          
     },
 
 

@@ -297,7 +297,7 @@
         May or may not be addicted to video games
 - id: 20
   keywords: ["Lizette"]
-  level: 
+  level: 99
   name: "Lizette"
   behaviors:
     lootable:
