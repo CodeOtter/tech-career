@@ -329,6 +329,6 @@
 - id: 22
   keywords: ['spider']
   name: Spider
-  level: 2
+  level: 1
   description: "Big scary devil spider trying to fuck shit up"
   quests: ['limbo:6']
