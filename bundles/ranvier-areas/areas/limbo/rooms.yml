@@ -434,6 +434,8 @@
       direction: west
     - roomId: "limbo:46"
       direction: south
+  Items:
+    - id: "limbo:14"
 - id: 46
   title: "Ashley's Dining Room"
   description: "Where Ashley fucks food up"
@@ -444,18 +446,25 @@
       direction: west
     - roomId: "limbo:50"
       direction: east
+  Items:
+    - id: "limbo:15"
 - id: 47
   title: "Lizette's Room"
   description: "Where the queen rests"
+  npcs: ["limbo:20" , "limbo:21"]
   exits:
     - roomId: "limbo:45"
       direction: east
+  Items:
+    - id: "limbo:17"
 - id: 48
   title: "Ashley's Kitchen"
   description: "Where cooking is attempted"
   exits:
     - roomId: "limbo:46"
       direction: east
+  Items:
+    - id: "limbo:16"
 - id: 49 
   title: "Ashley's Room"
   description: "Ashley's Room"
@@ -463,6 +472,8 @@
   exits:
     - roomId: "limbo:50"
       direction: south
+  Items:
+    - id: "limbo:18"
 - id: 50
   title: "Hall in Ashley's home"
   description: "connects rooms"
@@ -478,12 +489,17 @@
 - id: 51
   title: "Ethan's Room"
   description: "Where you can always find Ethan playing video games"
+  npcs: ["limbo:19"]
   exits:
     - roomId: "limbo:50"
       direction: west
+  Items:
+    - id: "limbo:19"
 - id: 52 
   title: "Main Bathroom"
   description: "Main bathroom of the house"
   exits:
     - roomId: "limbo:50"
       direction: north
+  items:
+    - id: "limbo:20" 

@@ -172,3 +172,38 @@
   roomDesc: "A sword"
   keywords: ["sword" , "stabby thing"]
   description: "A long sharp metal stick with a handle to stab people"
+- id: 14
+  name: "couch"
+  roomDesc: "a couch"
+  keywords: ["couch" , "comfy seat"]
+  description: "a cushioned place in which you would sit on"
+- id: 15
+  name: "Table"
+  roomDesc: "A table"
+  keywords: ["table"]
+  description: "basic wood table for people to eat at"
+- id: 16
+  name: "Sandwich"
+  roomDesc: "A sandwich"
+  keywords: ["sandwich"]
+  description: "a peanut butter and jelly sandwich that Ashley probably forgot about"
+- id: 17
+  name: "Television"
+  roomDesc: "TV"
+  keywords: ["TV" , "television"]
+  description: "a 60 in. flat screen hanging on the wall"
+- id: 18
+  name: "Guitar"
+  roomDesc: "Ashley's guitar"
+  keywords: ["guitar" , "musical instrument"]
+  description: "an acoustic guitar that Ashley jams out with"
+- id: 19
+  name: "Computer"
+  roomDesc: "Ethan's computer"
+  keywords: ["computer"]
+  description: "A computer gifted to Ethan"
+- id: 20
+  name: "Toilet"
+  roomDesc: "toilet"
+  keywords: ["toilet" , "comode"]
+  description: "where your stomach hostages are released"

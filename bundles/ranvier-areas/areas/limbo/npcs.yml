@@ -280,3 +280,48 @@
           max: 20
       description: >-
         A basic bitch who doesnt know what she wants in life
+- id: 19
+  keywords: ["Ethan"]
+  level: 
+  name: "Ethan"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        May or may not be addicted to video games
+- id: 20
+  keywords: ["Lizette"]
+  level: 
+  name: "Lizette"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        A really chill person
+- id: 21
+  keywords: ["Doug", "Douglas"]
+  level: 
+  name: "Doug"
+  behaviors:
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      description: >-
+        Spends most of his freetime asleep
