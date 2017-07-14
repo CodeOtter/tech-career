@@ -227,7 +227,6 @@
   behaviors:
     lootable:
       pools:
-        "limbo:21" 100
       # currencies is a list of currencies this npc can possibly drop and the amount range
       # the currency key is arbitrary so if you want a new currency just add a new key
       # the key must be formatted_like_this though, for rendering/saving purposes
@@ -327,18 +326,3 @@
           max: 20
       description: >-
         Spends most of his freetime asleep
-- id: 22
-  keywords: ["Sean", "That Guy That Fucked Morgaine", "Bambic", "Bambi"]
-  level: 18
-  name: "Sean"
-  behaviors:
-    lootable:
-      # currencies is a list of currencies this npc can possibly drop and the amount range
-      # the currency key is arbitrary so if you want a new currency just add a new key
-      # the key must be formatted_like_this though, for rendering/saving purposes
-      currencies:
-        gold:
-          min: 0 
-          max: 200
-      description: >-
-        Spends most of his freetime "asleep" ;)
