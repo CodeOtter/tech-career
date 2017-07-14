@@ -234,7 +234,7 @@
 - id: 22
   title: "Morgaine's Room"
   description: "The room where Morgaine does her living and sleeping"
-  ncps: [limbo:15]
+  ncps: ["limbo:15"]
   exits: 
     - roomId: "limbo:18"
       direction: north
