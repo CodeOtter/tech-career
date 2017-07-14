@@ -156,9 +156,9 @@ Once you find some bring it back to the rat, use '<white>quest log</white>' to f
 
     6: {
       config: {
-        title: "Kill devil spider",
+        title: 'Kill devil spider',
         level: 1,
-        requires: [ "limbo:50" ],
+        requires: [ 'limbo:50' ],
         autoComplete: true,
         desc: `There is a big ass spider in Ashley's hall
 
@@ -173,7 +173,7 @@ Once you find some bring it back to the rat, use '<white>quest log</white>' to f
       goals: [
         {
           type: KillGoal,
-          config: { title: "Kill an spider", npc: "limbo:22", count: 1 }
+          config: { title: 'Kill spider', npc: 'limbo:22', count: 1 }
         }
       ]
     }
