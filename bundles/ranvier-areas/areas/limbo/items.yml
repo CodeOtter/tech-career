@@ -216,10 +216,10 @@
   slot: "wield"
   quality: rare
   itemLevel: 10
-  level: 5
+  level: 1
   properties:
-    minDamage: 11
-    maxDamage: 20
+    minDamage: 10
+    maxDamage: 10
     speed: 2.8
     stats:
       strength: 2
