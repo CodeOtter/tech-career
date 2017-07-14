@@ -328,6 +328,7 @@
         Spends most of his freetime asleep
 - id: 22
   keywords: ["spider", "devil spider", "satan"]
+  quests: ['limbo:6']
   level: 
   name: "spider"
   behaviors:
