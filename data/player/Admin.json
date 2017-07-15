@@ -18,7 +18,7 @@
     },
     "health": {
       "delta": 0,
-      "base": 154
+      "base": 182
     },
     "armor": {
       "delta": 0,
@@ -31,15 +31,15 @@
   },
   "level": 1,
   "name": "Admin",
-  "room": "limbo:23",
+  "room": "limbo:19",
   "effects": [
     {
       "id": "regen",
-      "elapsed": 14439,
+      "elapsed": 119857,
       "state": {
         "magnitude": 15,
-        "lastTick": 2187,
-        "ticks": 5
+        "lastTick": 280,
+        "ticks": 40
       },
       "config": {
         "autoActivate": true,
@@ -53,13 +53,33 @@
         "type": "regen",
         "unique": true
       }
+    },
+    {
+      "id": "equip",
+      "elapsed": 80177,
+      "state": {
+        "slot": "wield",
+        "stats": {
+          "strength": 2,
+          "stamina": 2
+        }
+      },
+      "config": {
+        "autoActivate": true,
+        "description": "",
+        "duration": "inf",
+        "hidden": true,
+        "maxStacks": 0,
+        "name": "Equip: wield",
+        "persists": true,
+        "tickInterval": false,
+        "type": "equip.wield",
+        "unique": true
+      }
     }
   ],
   "experience": 0,
-  "inventory": {
-    "items": [],
-    "max": 16
-  },
+  "inventory": null,
   "metadata": {
     "class": "manager"
   },
@@ -84,7 +104,7 @@
             },
             {
               "state": {
-                "equipped": false
+                "equipped": true
               }
             },
             {
@@ -98,5 +118,16 @@
     ]
   },
   "role": 2,
-  "equipment": {}
+  "equipment": {
+    "wield": {
+      "entityReference": "limbo:21",
+      "inventory": null,
+      "behaviors": {
+        "sellable": {
+          "value": 30,
+          "currency": "gold"
+        }
+      }
+    }
+  }
 }
