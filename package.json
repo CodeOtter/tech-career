@@ -16,6 +16,7 @@
   "main": "raniver",
   "dependencies": {
     "bcryptjs": "^2.4.0",
+    "body-parser": "^1.15.2",
     "celebrate": "^4.0.1",
     "chokidar": "^1.6.1",
     "colorize": "",
@@ -38,7 +39,6 @@
     "whitelist-ips": "^1.0.1",
     "winston": "^2.3.1",
     "wrap-ansi": "^2.0.0",
-    "body-parser": "^1.15.2",
     "yaml": ""
   },
   "devDependencies": {

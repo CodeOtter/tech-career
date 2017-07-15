@@ -228,3 +228,71 @@
     sellable:
       value: 30
       currency: gold
+- id: 22
+  name: "Steel Chest"
+  type: CONTAINER
+  roomDesc: "A steel chest resides in the far corner of this room, its golden keyhole glimmers slightly..."
+  keywords: [ "steel", "chest" ]
+  description: "A well crafted steel chest with 'S.B.' plated in gold on the side"
+  items: [ "" ]
+  maxItems: 10
+  #i figure you should be able to hold +5 items each time the "tier" goes up
+  #the tiers I had in mind were wood, steel, gold, diamond, tempered glass, obsidion, bedrock, chest
+  #special types include: mini, HUGE, 'color', trick
+  properties:
+    noPickup: true
+- id: 23
+  name: "Gold Chest"
+  type: CONTAINER
+  roomDesc: "A BRIGHT LIGHT! You cover your eyes and make out a golden chest with a diamond encrusted keyhole" 
+  keywords: [ "gold", "chest" ]
+  description: "An elegent Elizabethan golden chest with the royal 'S.B.' insignia on the side"
+  items: [ "" ]
+  maxItems: 15
+  #i figure you should be able to hold +5 items each time the "tier" goes up
+  #the tiers I had in mind were wood, steel, gold, diamond, tempered glass, obsidion, bedrock, chest
+  #special types include: mini, HUGE, 'color', trick
+  properties:
+    noPickup: true
+- id: 24
+  name: "Diamond Chest"
+  type: CONTAINER
+  roomDesc: "Blinding lights with the color pallete of 1977's The Hobbit animated film hit your eyes, what you see beyond is a beautiful DIAMOND CHEST!!" 
+  keywords: [ "Diamond", "diamond", "chest" ]
+  description: "A chest made from pure diamonds encrusted with more diamonds and topped with the famed 'S.B.' insignia made with... tempered glass?"
+  items: [ "" ]
+  maxItems: 20
+  #i figure you should be able to hold +5 items each time the "tier" goes up
+  #the tiers I had in mind were wood, steel, gold, diamond, tempered glass, obsidion, bedrock, chest
+  #special types include: mini, HUGE, 'color', trick
+  properties:
+    noPickup: true
+- id: 25
+  name: "Tempered Glass Chest"
+  type: CONTAINER
+  roomDesc: "Items seem to float in the corner in a tempered glass chest" 
+  keywords: [ "tempered", "glass", "chest" ]
+  description: "Almost invisible to the naked eye, the tempered glass makes for an impenetrable chest. emboldened on the side is another 'S.B.' insignia, this one made from obsidion"
+  items: [ "" ]
+  maxItems: 25
+  #i figure you should be able to hold +5 items each time the "tier" goes up
+  #the tiers I had in mind were wood, steel, gold, diamond, tempered glass, obsidion, bedrock, chest
+  #special types include: mini, HUGE, 'color', trick
+  properties:
+    noPickup: true
+- id: 26
+  name: "Obsidion Chest"
+  type: CONTAINER
+  roomDesc: "Something feels strange here... the room seems to get darker towards one corner of the room... an obsidion chest sits patiently" 
+  keywords: [ "obsidion", "voidelike", "chest" ]
+  description: "A dark, voidlike chest. If it weren't for the keyhole you might think it was a darkhole"
+  items: [ "" ]
+  maxItems: 1
+  #i figure you should be able to hold +5 items each time the "tier" goes up
+  #the tiers I had in mind were wood, steel, gold, diamond, tempered glass, obsidion, chest
+  #special types include: mini, HUGE, 'color', trick
+  #I dont know how to make a special property, but im sure I can figure it out eventually
+  #I'll take apart the "noPickup" property and eventually we can just write 'huge' and it
+  #will instantly be able to hold say 5 more items or double etc
+  properties:
+    noPickup: true
