@@ -14,6 +14,8 @@ See the [staging](https://github.com/shawncplus/ranviermud/tree/staging) branch 
 Ranvier is _not_ a WebSocket MUD. It does not have a web client. It is a plain ol' fashioned telnet MUD. Any client you
 can use to connect to the MUD you played 15 years ago will work with Ranvier.
 
+Neat
+
 ## Documentation
 
 Ranvier prides itself on having thorough documentation which is available on our website: [ranviermud.com](http://www.ranviermud.com)
